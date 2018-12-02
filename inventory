@@ -1,12 +1,12 @@
-[webservers]
 worker2.appcluster.net
 
-[dbservers]
-worker2.appcluster.net
+[northeast]
+boston1.example.com
 
-[servers:children]
-webservers
-dbservers
+[southeast]
+releigh1.example.com
+atlanta.example.com
 
-[servers:vars]
-package=httpd
+[east:children]
+northeast
+southeast
