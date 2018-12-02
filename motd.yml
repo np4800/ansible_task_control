@@ -1,10 +1,10 @@
 ---
-- hosts: servers
+- hosts: ungrouped
   vars:
     system_owner: nikhilpatel@ansible.com
   tasks:
     - template:
-        src: /home/devops/ansible_playbooks/task_control/jinja2/motd.j2
+        src: jinja2/motd.j2
         dest: /etc/motd
         owner: root
         group: root
