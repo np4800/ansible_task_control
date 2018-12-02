@@ -1,0 +1,12 @@
+[webservers]
+worker2.appcluster.net
+
+[dbservers]
+worker2.appcluster.net
+
+[servers:children]
+webservers
+dbservers
+
+[servers:vars]
+package=httpd
